@@ -1,17 +1,15 @@
-let btns = document.querySelectorAll('.navbar__login')
+let authBtn = document.querySelector('.navbar__login')
 let modal = document.querySelector('.modal')
 let close = document.querySelector('.close-modal')
 let overlay = document.querySelector('.overlay')
 
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener(
-     'click', function () {
+
+authBtn.addEventListener(
+    'click', function () {
         modal.classList.remove('hidden')
         overlay.classList.remove('hidden')
-     }
-    )  
-}
-
+    }
+)
 close.addEventListener(
     'click', function () {
         modal.classList.add('hidden')
@@ -30,3 +28,4 @@ document.addEventListener(
    
 }
 )
+

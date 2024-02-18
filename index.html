@@ -1,85 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/6e9f13f3d7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6e9f13f3d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Aros</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- info //////////////// -->
     <div class="main">
-        <div class="main__adress">   
-         <a target="_blank" href="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.6257863445776!2d69.2711667!3d41.33874999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIwJzE5LjUiTiA2OcKwMTYnMTYuMiJF!5e0!3m2!1sru!2s!4v1704189884087!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> <i class="fa-solid fa-location-dot"></i></a>
-         <p>Tashkent city, Malika bazar, shop A-18</p>
+      <div class="main__adress">
+        <a
+          target="_blank"
+          href="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.6257863445776!2d69.2711667!3d41.33874999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIwJzE5LjUiTiA2OcKwMTYnMTYuMiJF!5e0!3m2!1sru!2s!4v1704189884087!5m2!1sru!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+          <i class="fa-solid fa-location-dot"></i
+        ></a>
+        <p>Tashkent city, Malika bazar, shop A-18</p>
+      </div>
+
+      <div class="main__info">
+        <i class="fa-brands fa-telegram"></i>
+        <p>Write to support</p>
+
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>+998 (78) 113-77-70</p>
+
+        <div class="main__info-lan">
+          <select name="language" id="language">
+            <option value="eng">eng</option>
+            <option value="ru">ru</option>
+            <option value="uz">uz</option>
+          </select>
         </div>
-
-        <div class="main__info">
-                <i class="fa-brands fa-telegram"></i>
-                <p>Write to support</p>
-
-                <i class="fa-solid fa-phone-volume"></i>
-                <p>+998 (78) 113-77-70</p>
-
-            <div class="main__info-lan">
-                <select name="language" id="language">
-                    <option value="eng">eng </option>
-                    <option value="ru">ru</option>
-                    <option value="uz">uz</option>
-                </select>
-            </div>
-        </div>
+      </div>
     </div>
 
+    <!-- NAVBAR        -->
+
     <div class="navbar">
-        <div class="navbar__logo">
-            <img src="./assets/media/logo.1875e855.svg" alt="">
-        </div>
-        <div class="navbar__search">
-            <form action="#">
-                <input type="search" name="search" id="search" placeholder="Search">
-                <button>Search</button>
-            </form>
-        </div>
-       <div class="navbar__cash">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3477 9.73322C14.3477 8.76396 15.1362 7.97541 16.1055 7.97541H16.7138L16.5303 7.46529C16.4271 7.17842 16.1568 7 15.8686 7C15.7888 7 15.7076 7.01371 15.6282 7.04261L9.48103 9.27999C9.11558 9.41302 8.9275 9.81742 9.0613 10.1826L9.38611 11.0692H14.3477V9.73322Z" fill="#0A0A0A"></path><path d="M16.1055 9.03003C15.7171 9.03003 15.4023 9.34482 15.4023 9.73315V11.0691H21.5547V9.73315C21.5547 9.34482 21.2399 9.03003 20.8516 9.03003H16.1055Z" fill="#0A0A0A"></path><path d="M23.418 21.2117H20.957C19.5031 21.2117 18.3203 20.0288 18.3203 18.575C18.3203 17.1211 19.5031 15.9382 20.957 15.9382H23.418V13.53C23.418 12.7534 22.7884 12.1238 22.0117 12.1238H8.40625C7.62961 12.1238 7 12.7534 7 13.53V23.5937C7 24.3703 7.62961 24.9999 8.40625 24.9999H22.0117C22.7884 24.9999 23.418 24.3703 23.418 23.5937V21.2117Z" fill="#0A0A0A"></path><path d="M24.4727 16.9929H20.957C20.0847 16.9929 19.375 17.7026 19.375 18.575C19.375 19.4473 20.0847 20.157 20.957 20.157H24.4727C24.7634 20.157 25 19.9204 25 19.6296V17.5203C25 17.2295 24.7634 16.9929 24.4727 16.9929ZM20.957 19.1023C20.6658 19.1023 20.4297 18.8662 20.4297 18.575C20.4297 18.2837 20.6658 18.0476 20.957 18.0476C21.2483 18.0476 21.4844 18.2837 21.4844 18.575C21.4844 18.8662 21.2483 19.1023 20.957 19.1023Z" fill="#0A0A0A"></path><rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#1FBA4A"></rect></svg>
+      <div class="navbar__logo">
+        <img src="./assets/media/logo.1875e855.svg" alt="" />
+      </div>
+
+      <div class="navbar__search">
+        <form action="#">
+          <input type="search" name="search" id="search" placeholder="Search" />
+          <button>Search</button>
+        </form>
+      </div>
+
+      <div class="navbar__cash">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.3477 9.73322C14.3477 8.76396 15.1362 7.97541 16.1055 7.97541H16.7138L16.5303 7.46529C16.4271 7.17842 16.1568 7 15.8686 7C15.7888 7 15.7076 7.01371 15.6282 7.04261L9.48103 9.27999C9.11558 9.41302 8.9275 9.81742 9.0613 10.1826L9.38611 11.0692H14.3477V9.73322Z"
+            fill="#0A0A0A"
+          ></path>
+          <path
+            d="M16.1055 9.03003C15.7171 9.03003 15.4023 9.34482 15.4023 9.73315V11.0691H21.5547V9.73315C21.5547 9.34482 21.2399 9.03003 20.8516 9.03003H16.1055Z"
+            fill="#0A0A0A"
+          ></path>
+          <path
+            d="M23.418 21.2117H20.957C19.5031 21.2117 18.3203 20.0288 18.3203 18.575C18.3203 17.1211 19.5031 15.9382 20.957 15.9382H23.418V13.53C23.418 12.7534 22.7884 12.1238 22.0117 12.1238H8.40625C7.62961 12.1238 7 12.7534 7 13.53V23.5937C7 24.3703 7.62961 24.9999 8.40625 24.9999H22.0117C22.7884 24.9999 23.418 24.3703 23.418 23.5937V21.2117Z"
+            fill="#0A0A0A"
+          ></path>
+          <path
+            d="M24.4727 16.9929H20.957C20.0847 16.9929 19.375 17.7026 19.375 18.575C19.375 19.4473 20.0847 20.157 20.957 20.157H24.4727C24.7634 20.157 25 19.9204 25 19.6296V17.5203C25 17.2295 24.7634 16.9929 24.4727 16.9929ZM20.957 19.1023C20.6658 19.1023 20.4297 18.8662 20.4297 18.575C20.4297 18.2837 20.6658 18.0476 20.957 18.0476C21.2483 18.0476 21.4844 18.2837 21.4844 18.575C21.4844 18.8662 21.2483 19.1023 20.957 19.1023Z"
+            fill="#0A0A0A"
+          ></path>
+          <rect
+            x="0.5"
+            y="0.5"
+            width="31"
+            height="31"
+            rx="7.5"
+            stroke="#1FBA4A"
+          ></rect>
+        </svg>
         <div class="navbar__cash-text">
-            <p class="grey">Cashback:</p>
-            <p class="dark">0 UZS</p>
+          <p class="grey">Cashback:</p>
+          <p class="dark">0 UZS</p>
         </div>
-       </div>
-       <div class="navbar__icons">
+      </div>
+
+      <div class="navbar__icons">
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <i class="fa-regular fa-bell"></i>
-       </div>
+      </div>
 
-       <div class="navbar__login">
+      <div class="navbar__login">
         <p>Login</p>
-        <span class="MuiButton-endIcon MuiButton-iconSizeMedium mui-style-pt151d"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#0A0A0A"></path></svg></span>
+        <!-- <span
+          class="MuiButton-endIcon MuiButton-iconSizeMedium mui-style-pt151d"
+          ><svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z"
+              fill="#0A0A0A"
+            ></path></svg
+        ></span> -->
+      </div>
 
-        <div class="modal hidden">
-            <button class="close-modal">&times;</button>
-            <h1>Sign in</h1>
-            <p>Fill in the following fields to sign in</p>
-            <div class="number">
-                <label for="number">Phone number</label>
-                <input type="text" name="number" id="number" placeholder="+998">
-                <button class="sign">Sign in</button>
-                <button class="password">Sign in with password</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+
+        <div class="right">
+          <h1>What we offer</h1>
+          <div class="right__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="right__text">
+              <h3>Wide choice</h3>
+              <p>We have more than 30,000 kinds of products</p>
             </div>
-            <div class="footer">
-                <p>Don’t have an account? <span><a href="#">Sign Up</a></span></p>
-                
-                <p class="end">By logging in, you agree to our <br>
-                   <span><a href="#">privacy policy</a> </span></p>
+          </div>
+
+          <div class="right__icon">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div class="right__text">
+              <h3>Cheap price</h3>
+              <p>Exceptional value, affordable excellence</p>
             </div>
+          </div>
+
+          <div class="right__icon">
+            <i class="fa-solid fa-truck"></i>
+            <div class="right__text">
+              <h3>Convenient delivery</h3>
+              <p>Convenient service: fast delivery.</p>
+            </div>
+          </div>
         </div>
-    
-        <div class="overlay hidden"></div>
-       </div>
+
+        <div class="left">
+          <h1>Sign in</h1>
+          <p>Fill in the following fields to sign in</p>
+          <div class="number">
+            <label for="number">Phone number</label>
+            <input type="text" name="number" id="number" placeholder="+998" />
+            <button class="sign">Sign in</button>
+            <button class="password">Sign in with password</button>
+          </div>
+          <div class="footer">
+            <p>
+              Don’t have an account? <span><a href="#">Sign Up</a></span>
+            </p>
+
+            <p class="end">
+              By logging in, you agree to our <br />
+              <span><a href="#">privacy policy</a> </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay hidden"></div>
     </div>
 
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
